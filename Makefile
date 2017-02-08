@@ -76,7 +76,23 @@ SRC = 	ft_atoi.c \
 	ft_itoa.c \
 	ft_strsplit.c \
 	ft_strchar.c \
-	ft_write_null.c
+	ft_write_null.c \
+	ft_printf.c \
+	ft_print_unsigned.c \
+	ft_print_signed.c \
+	ft_print_char.c \
+	ft_printf_pointer.c \
+	ftf_size_prec_lenght.c \
+	ftf_check_if_flags.c \
+	ftf_convert_arg.c \
+	ftf_itoa_max_int.c \
+	ftf_convert_to_o_hex.c \
+	ft_print_unicode.c \
+	ft_free_return.c \
+	ftf_lenght_width_spec.c \
+	ftf_checker.c \
+	ft_join_unicode.c \
+	ft_get_width_prec.c
 
 OBJ = $(SRC:.c=.o)
 
