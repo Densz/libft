@@ -6,11 +6,11 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/30 14:13:37 by dzheng            #+#    #+#             */
-/*   Updated: 2017/01/18 14:27:11 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:46:28 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "libft.h"
 
 static int			ft_xvalue(unsigned long *i)
 {

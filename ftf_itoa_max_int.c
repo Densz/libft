@@ -6,11 +6,11 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/09 15:12:07 by dzheng            #+#    #+#             */
-/*   Updated: 2017/01/17 10:45:14 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:46:26 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "libft.h"
 
 static void				n_isnegative(intmax_t *n, int *is_negative)
 {

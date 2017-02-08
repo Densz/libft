@@ -6,11 +6,11 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/30 16:25:57 by dzheng            #+#    #+#             */
-/*   Updated: 2017/01/18 14:37:12 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:46:27 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "libft.h"
 
 char		*ft_is_blank(t_flags b, char *str, int negative)
 {

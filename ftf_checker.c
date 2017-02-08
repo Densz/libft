@@ -6,11 +6,11 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/17 13:12:23 by dzheng            #+#    #+#             */
-/*   Updated: 2017/01/17 14:40:27 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:46:27 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "libft.h"
 
 int				ft_check_there_is_letter(char c)
 {

@@ -6,11 +6,11 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/09 15:33:44 by dzheng            #+#    #+#             */
-/*   Updated: 2017/01/17 10:42:35 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:46:26 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "libft.h"
 
 char			*convert_int_to_octal(uintmax_t i)
 {

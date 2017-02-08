@@ -6,11 +6,11 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 11:04:04 by dzheng            #+#    #+#             */
-/*   Updated: 2017/01/18 13:58:44 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:46:29 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "libft.h"
 
 int					size_of_binary(unsigned int b)
 {

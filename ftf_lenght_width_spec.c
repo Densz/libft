@@ -6,11 +6,11 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/17 11:45:21 by dzheng            #+#    #+#             */
-/*   Updated: 2017/01/18 11:57:39 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:46:25 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "libft.h"
 
 void		ft_lenght_c(t_flags *b, char **str)
 {

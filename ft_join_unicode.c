@@ -6,11 +6,11 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/18 14:02:26 by dzheng            #+#    #+#             */
-/*   Updated: 2017/01/18 14:52:36 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:46:30 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "libft.h"
 
 char		*ft_join_unicode(char *out_unicode, wchar_t *str)
 {

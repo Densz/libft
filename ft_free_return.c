@@ -6,11 +6,11 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/17 11:25:05 by dzheng            #+#    #+#             */
-/*   Updated: 2017/01/18 14:26:50 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 19:46:31 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "libft.h"
 
 int			ft_free_return(char **str)
 {
