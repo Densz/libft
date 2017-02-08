@@ -6,7 +6,7 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 16:49:40 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/08 19:47:41 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/08 20:02:32 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@
 # include <stdarg.h>
 # include <stdio.h>
 # include <wchar.h>
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h>
 
 /*
 ** LIBFT
@@ -176,5 +179,20 @@ char				*ft_convert_octal(char *str, uintmax_t i, t_flags b);
 int					ft_free_flags_return(char **str, t_flags b);
 char				*ft_join_flags_int(t_flags b, char *str);
 char				*ft_join_lenght_int(t_flags b, char *tmp, char *str);
+
+/*
+** GET_NET_LINE
+*/
+
+# define BUFF_SIZE 1000
+
+typedef struct		s_fd
+{
+	int				n_fd;
+	char			*str;
+	struct s_fd		*next;
+}					t_fd;
+
+int					get_next_line(const int fd, char **line);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: dzheng <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/23 12:13:13 by dzheng            #+#    #+#              #
-#    Updated: 2016/12/02 15:42:26 by dzheng           ###   ########.fr        #
+#    Updated: 2017/02/08 20:03:19 by dzheng           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -92,7 +92,8 @@ SRC = 	ft_atoi.c \
 	ftf_lenght_width_spec.c \
 	ftf_checker.c \
 	ft_join_unicode.c \
-	ft_get_width_prec.c
+	ft_get_width_prec.c \
+	get_next_line.c
 
 OBJ = $(SRC:.c=.o)
 
