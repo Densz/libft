@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_lstaddend.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dzheng <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/30 16:29:23 by dzheng            #+#    #+#             */
-/*   Updated: 2016/12/01 14:43:28 by dzheng           ###   ########.fr       */
+/*   Created: 2017/02/09 10:25:14 by dzheng            #+#    #+#             */
+/*   Updated: 2017/02/09 10:31:10 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-void	ft_swap(int *a, int *b)
+void		ft_lstaddend(t_list **alst, t_list *new)
 {
-	int c;
-
-	c = 0;
-	c = *a;
-	*a = *b;
-	*b = c;
+	if ((*alst)->next != NULL)
+		ft_lstaddend(&(*alst)->next, new);
+	else
+	{
+		(*alst)->next = new;
+	}
 }

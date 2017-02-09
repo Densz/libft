@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_intlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dzheng <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/30 16:29:23 by dzheng            #+#    #+#             */
-/*   Updated: 2016/12/01 14:43:28 by dzheng           ###   ########.fr       */
+/*   Created: 2017/02/09 10:13:08 by dzheng            #+#    #+#             */
+/*   Updated: 2017/02/09 10:30:39 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_swap(int *a, int *b)
+int	ft_intlen(int n)
 {
-	int c;
-
-	c = 0;
-	c = *a;
-	*a = *b;
-	*b = c;
+	if (n == -2147483648)
+		return (11);
+	if (n < 0)
+		return (1 + ft_intlen(-n));
+	if (n < 10)
+		return (1);
+	else
+		return (1 + ft_intlen(n / 10));
 }

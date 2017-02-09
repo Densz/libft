@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dzheng <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/30 16:29:23 by dzheng            #+#    #+#             */
-/*   Updated: 2016/12/01 14:43:28 by dzheng           ###   ########.fr       */
+/*   Created: 2017/02/09 10:26:00 by dzheng            #+#    #+#             */
+/*   Updated: 2017/02/09 10:30:14 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_swap(int *a, int *b)
+int		ft_lstsize(t_list *lst)
 {
-	int c;
-
-	c = 0;
-	c = *a;
-	*a = *b;
-	*b = c;
+	if (!lst)
+		return (0);
+	return (1 + ft_lstsize(lst->next));
 }

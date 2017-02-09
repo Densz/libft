@@ -6,7 +6,7 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 16:49:40 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/08 20:02:32 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/09 10:24:21 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,11 @@ char				*ft_strrev(char *str);
 int					ft_ispunct(int c);
 char				*ft_strchar(char c, size_t size);
 void				ft_write_null(void);
-
+int					ft_intlen(int n);
+long long			ft_abs(long long n);
+void				ft_lstaddend(t_list **alst, t_list *new);
+t_list				*ft_lstsort(t_list *lst, int (*cmp)(void*, void*));
+int					ft_lstsize(t_list *lst);
 /*
 ** FT_PRINTF
 */
