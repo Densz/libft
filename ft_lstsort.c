@@ -6,72 +6,33 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/09 10:13:08 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/09 10:31:24 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/09 10:57:32 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static t_list	*deep(t_list *lst, int depth)
-{
-	while (depth > 0)
-	{
-		lst = lst->next;
-		depth--;
-	}
-	return (lst);
-}
-
-static t_list	*memberswap(t_list *first, t_list *lst, int depth)
-{
-	t_list		*tail;
-	t_list		*head;
-
-	if (!depth)
-	{
-		tail = first->next->next;
-		head = first;
-		first = first->next;
-		first->next = head;
-		first->next->next = tail;
-	}
-	else
-	{
-		tail = lst->next->next;
-		head = lst;
-		lst = lst->next;
-		lst->next = head;
-		lst->next->next = tail;
-		deep(first, depth - 1)->next = lst;
-	}
-	return (first);
-}
-
 t_list			*ft_lstsort(t_list *lst, int (*cmp)(void*, void*))
 {
-	int		done;
-	int		depth;
-	t_list	*first;
+	t_list		*cur1;
+	t_list		*cur2;
+	t_list		tmp;
 
-	if (!cmp || !lst)
-		return (0);
-	first = lst;
-	done = 0;
-	while (!done)
+	cur1 = lst;
+	while (cur1)
 	{
-		lst = first;
-		done = 1;
-		depth = 0;
-		while (lst->next)
+		cur2 = cur1->next;
+		while (cur2)
 		{
-			if (!(cmp(lst->content, lst->next->content)))
+			if (cmp(cur1->content, cur2->content) == 0)
 			{
-				first = memberswap(first, lst, depth);
-				done = 0;
+				tmp.content = cur2->content;
+				cur2->content = cur1->content;
+				cur1->content = tmp.content;
 			}
-			depth++;
-			lst = deep(first, depth);
+			cur2 = cur2->next;
 		}
+		cur1 = cur1->next;
 	}
-	return (first);
+	return (lst);
 }
