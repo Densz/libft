@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
+/*   By: denis <denis@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/14 19:23:08 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/08 20:03:44 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/09 14:15:56 by denis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,9 +72,7 @@ int				whileread(const int fd, char *buf, t_fd *save, char **line)
 	int			ret;
 	t_fd		*ptr;
 	char		*tmp;
-	int			i;
 
-	i = 0;
 	ptr = save;
 	tmp = NULL;
 	while ((ret = read(fd, buf, BUFF_SIZE)) > 0)
