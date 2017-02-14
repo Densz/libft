@@ -30,6 +30,7 @@ SRC = 	ft_atoi.c \
 	ft_isalnum.c \
 	ft_isascii.c \
 	ft_isprint.c \
+	ft_ishex.c \
 	ft_toupper.c \
 	ft_tolower.c \
 	ft_putchar_fd.c \
@@ -98,7 +99,8 @@ SRC = 	ft_atoi.c \
 	ft_lstaddend.c \
 	ft_lstsort.c \
 	ft_lstsize.c \
-	get_next_line.c
+	get_next_line.c \
+	ft_print_tab.c
 
 
 OBJ = $(SRC:.c=.o)

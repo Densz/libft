@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: denis <denis@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 16:49:40 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/09 14:14:22 by denis            ###   ########.fr       */
+/*   Updated: 2017/02/14 12:53:27 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ int					ft_isdigit(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
+int					ft_ishex(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 void				ft_putchar_fd(char c, int fd);
@@ -106,6 +107,8 @@ long long			ft_abs(long long n);
 void				ft_lstaddend(t_list **alst, t_list *new);
 t_list				*ft_lstsort(t_list *lst, int (*cmp)(void*, void*));
 int					ft_lstsize(t_list *lst);
+void				ft_print_tab(int **tab, int line, int column);
+
 /*
 ** FT_PRINTF
 */
