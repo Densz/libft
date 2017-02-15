@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsort.c                                       :+:      :+:    :+:   */
+/*   ft_lstselectsort.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/09 10:13:08 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/09 10:57:32 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/15 18:12:05 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list			*ft_lstsort(t_list *lst, int (*cmp)(void*, void*))
+t_list			*ft_lstselectsort(t_list *lst, int (*cmp)(void*, void*))
 {
 	t_list		*cur1;
 	t_list		*cur2;

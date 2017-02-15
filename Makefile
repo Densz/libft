@@ -63,6 +63,7 @@ SRC = 	ft_atoi.c \
 	ft_strnequ.c \
 	ft_strsub.c \
 	ft_strjoin.c \
+	ft_strnjoin.c \
 	ft_strtrim.c \
 	ft_lstnew.c \
 	ft_lstdelone.c \
@@ -97,7 +98,7 @@ SRC = 	ft_atoi.c \
 	ft_join_unicode.c \
 	ft_get_width_prec.c \
 	ft_lstaddend.c \
-	ft_lstsort.c \
+	ft_lstselectsort.c \
 	ft_lstsize.c \
 	get_next_line.c \
 	ft_print_tab.c

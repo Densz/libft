@@ -6,7 +6,7 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 16:49:40 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/14 12:53:27 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/15 18:12:31 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,7 @@ int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strnjoin(int n, ...);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_itoa(int n);
@@ -105,7 +106,7 @@ void				ft_write_null(void);
 int					ft_intlen(int n);
 long long			ft_abs(long long n);
 void				ft_lstaddend(t_list **alst, t_list *new);
-t_list				*ft_lstsort(t_list *lst, int (*cmp)(void*, void*));
+t_list				*ft_lstselectsort(t_list *lst, int (*cmp)(void*, void*));
 int					ft_lstsize(t_list *lst);
 void				ft_print_tab(int **tab, int line, int column);
 
