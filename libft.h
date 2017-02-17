@@ -6,7 +6,7 @@
 /*   By: dzheng <dzheng@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 16:49:40 by dzheng            #+#    #+#             */
-/*   Updated: 2017/02/15 18:12:31 by dzheng           ###   ########.fr       */
+/*   Updated: 2017/02/17 14:41:55 by dzheng           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,6 +109,7 @@ void				ft_lstaddend(t_list **alst, t_list *new);
 t_list				*ft_lstselectsort(t_list *lst, int (*cmp)(void*, void*));
 int					ft_lstsize(t_list *lst);
 void				ft_print_tab(int **tab, int line, int column);
+void				ft_print_grid(char **str);
 
 /*
 ** FT_PRINTF
